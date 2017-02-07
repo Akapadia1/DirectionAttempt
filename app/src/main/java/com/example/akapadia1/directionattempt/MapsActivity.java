@@ -51,8 +51,8 @@ public class MapsActivity extends AppCompatActivity  implements OnMapReadyCallba
     private ProgressDialog progressDialog;
     private List<LatLng> grabber = new ArrayList<>();
     private Button button;
-    private LocationManager locationManager;
-    private LocationListener locationListener;
+   // private LocationManager locationManager;
+    //private LocationListener locationListener;
 
 
 
@@ -68,7 +68,8 @@ public class MapsActivity extends AppCompatActivity  implements OnMapReadyCallba
         mapFragment.getMapAsync(this);
         sendRequest();
 
-        locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
+        //ATTEMPETED CURRENT USER LOCATION.
+       /*locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
         locationListener = new LocationListener() {
             @Override
             public void onLocationChanged(Location location) {
@@ -96,8 +97,9 @@ public class MapsActivity extends AppCompatActivity  implements OnMapReadyCallba
 
         }
 
-
+*/
     }
+    /*
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         switch(requestCode){
@@ -119,7 +121,7 @@ public class MapsActivity extends AppCompatActivity  implements OnMapReadyCallba
         });
 
 
-    }
+    }*/
 
 
 
